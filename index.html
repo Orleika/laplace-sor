@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <title>温度分布 | ラプラス方程式-SOR法</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 style="text-align: center; margin: 30px 0">
+        温度分布 ラプラス方程式-SOR法
+      </h1>
+    </header>
+    <main>
+      <h2 class="page-header">デモ(2つの境界が0℃残り2つの境界が0℃から100℃に線形増加)</h2>
+      <p>0℃　- 100℃</p>
+      <canvas id="the-bar"></canvas>
+      <h3 class="page-header">10*10</h3>
+      <div style="border: 1px solid #ccc; border-radius: 3px">
+        <canvas id="graph1"></canvas>
+      </div>
+      <pre id="text1"></pre>
+      <h3 class="page-header">50*50</h3>
+      <div style="border: 1px solid #ccc; border-radius: 3px">
+        <canvas id="graph2"></canvas>
+      </div>
+      <pre id="text2"></pre>
+    </main>
+    <footer style="text-align: center; margin: 40px 0">
+      &copy; 2015 Orleika
+    </footer>
+  </div>
+  <script src="lib/jquery-2.1.4.min.js"></script>
+  <script src="js/hsv2rgb.js"></script>
+  <script src="js/sor.js"></script>
+  <script src="js/thebar.js"></script>
+  <script src="js/demo1.js"></script>
+  <script src="js/demo2.js"></script>
+</body>
+</html>
